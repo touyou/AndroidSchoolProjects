@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.dev.touyou.carrywhich.MainActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" android:layout_weight="1">
+            <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView" android:src="@drawable/img0" android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView2" android:src="@drawable/img1" android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3" android:src="@drawable/img2" android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4" android:src="@drawable/img3" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Name"
+                        android:id="@+id/nameTextView" android:textSize="20sp" android:layout_weight="1"
+                        android:gravity="center"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Pokemon"
+                        android:id="@+id/pokemonTextView" android:textSize="20sp" android:layout_weight="1"
+                        android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Verb"
+                        android:id="@+id/verbTextView" android:textSize="20sp"
+                        android:layout_weight="1" android:gravity="center"/>
+                <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Run"
+                        android:id="@+id/button" android:onClick="runPoke" android:layout_weight="1"
+                        android:background="@color/material_deep_teal_200"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
