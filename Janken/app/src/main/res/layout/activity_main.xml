@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.dev.touyou.janken.MainActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" android:layout_alignParentTop="true">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cpu" android:src="@drawable/scissors"
+                android:layout_gravity="center_horizontal"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="あなたの手"
+                android:id="@+id/player" android:layout_gravity="center_horizontal" android:textSize="30sp"
+                android:src="@drawable/scissors"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="結果"
+                android:id="@+id/result" android:layout_gravity="center_horizontal" android:textSize="30sp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0勝0敗"
+                android:id="@+id/textView" android:layout_gravity="center_horizontal" android:textSize="20sp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+            <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="グー"
+                    android:id="@+id/button" android:layout_weight="1" android:onClick="rock"
+                    android:src="@drawable/rock" android:scaleType="fitCenter"/>
+            <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="チョキ"
+                    android:id="@+id/button2" android:layout_weight="1" android:onClick="scissors"
+                    android:src="@drawable/scissors" android:scaleType="fitCenter"/>
+            <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="パー"
+                    android:id="@+id/button3" android:layout_weight="1" android:onClick="paper"
+                    android:src="@drawable/paper" android:scaleType="fitCenter"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
