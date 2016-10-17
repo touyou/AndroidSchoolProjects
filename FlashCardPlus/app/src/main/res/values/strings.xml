@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FlashCardPlus</string>
+
+    <string name="polygon_name">Polygon</string>
+    <string name="polygon_content">ポリゴン状のポケモン。カクカク。</string>
+    <string name="polygon_meaning">ポリゴン</string>
+
+    <string name="fire_name">Fire</string>
+    <string name="fire_content">伝説のポケモン。フェニックスっぽい。</string>
+    <string name="fire_meaning">ファイヤ</string>
+
+    <string name="thunder_name">Thunder</string>
+    <string name="thunder_content">伝説のポケモン。電気。</string>
+    <string name="thunder_meaning">サンダー</string>
+
+    <string name="myu_name">Myu</string>
+    <string name="myu_content">伝説のポケモン。かわいい。</string>
+    <string name="myu_meaning">ミュウ</string>
+
+    <string name="myutwo_name">MyuTwo</string>
+    <string name="myutwo_content">伝説のポケモン。人造ミュウ。</string>
+    <string name="myutwo_meaning">ミュウツー</string>
+</resources>
