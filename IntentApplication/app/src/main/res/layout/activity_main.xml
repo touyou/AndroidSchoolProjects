@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.dev.touyou.intentapplication.MainActivity">
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/editText" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:hint="住所"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地図"
+            android:id="@+id/button" android:layout_below="@+id/editText" android:layout_centerHorizontal="true"
+            android:nestedScrollingEnabled="false" android:onClick="map"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="画像"
+            android:id="@+id/button2" android:layout_below="@+id/button" android:layout_centerHorizontal="true"
+            android:onClick="gallery"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="メール"
+            android:id="@+id/button3" android:layout_below="@+id/button2" android:layout_centerHorizontal="true"
+            android:onClick="mail"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="アプリ"
+            android:id="@+id/button4" android:layout_below="@+id/button3" android:layout_centerHorizontal="true"
+            android:onClick="app"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="カメラ"
+            android:id="@+id/button5" android:layout_below="@+id/button4" android:layout_centerHorizontal="true"
+            android:onClick="camera"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ウェブ"
+            android:id="@+id/button6" android:layout_below="@+id/button5" android:layout_centerHorizontal="true"
+            android:onClick="internet"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/imageView" android:layout_below="@+id/button6" android:layout_centerHorizontal="true"/>
+</RelativeLayout>
